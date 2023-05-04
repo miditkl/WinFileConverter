@@ -1,6 +1,7 @@
 # WinFileConverter
-A file converter, using the native context menu. Convert audio, video and image files easily by right clicking it.
+A file converter, using the native context menu. Convert audio, video and image files easily by right-clicking it.
 
+![alt text](/rm/wfc.png)
 ## How to install WFC
 - Move the repository into any folder, which you won't touch at any time (Documents Folder, User Folder etc.)
 - Run ``WFC_Installer.py``
@@ -22,6 +23,6 @@ A file converter, using the native context menu. Convert audio, video and image 
 
 ## Problems...
 ### WFC is still installed/can't uninstall
-- Make sure, that you haven't changed the directory. This programm is limited by using absolute paths.
+- Make sure, that you haven't changed the directory. This program is limited by using absolute paths.
 ### Some options to convert files are missing
-- Its also a limitation, this time by Windows. Contextmenus can only have 16 Items.
+- It's also a limitation, this time by Windows. Context-menus can only have 16 Items.
