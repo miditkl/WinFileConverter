@@ -24,38 +24,38 @@ if __name__ == '__main__':
         menus.ContextCommand(name="MP3", python=converter.convert, params='mp3 false'),
         # menus.ContextCommand(name="FLAC", python=converter.convert, params='flac false'),
         # menus.ContextCommand(name="OGG", python=converter.convert, params='ogg false'),
-        menus.ContextCommand(name="M4A", python=converter.convert, params='m4a false'),
+        # menus.ContextCommand(name="M4A", python=converter.convert, params='m4a false'),
         # menus.ContextCommand(name="AAC", python=converter.convert, params='aac false'),
         menus.ContextCommand(name="WMA", python=converter.convert, params='wma false'),
         # menus.ContextCommand(name="OPUS", python=converter.convert, params='opus false'),
         # menus.ContextCommand(name="AC3", python=converter.convert, params='ac3 false'),
     ])
 
+    image_menu.add_items([
+        menus.ContextCommand(name="PNG", python=converter.convert, params='png false'),
+        menus.ContextCommand(name="JPG", python=converter.convert, params='jpg false'),
+        menus.ContextCommand(name="GIF", python=converter.convert, params='gif false'),
+        # menus.ContextCommand(name="BMP", python=converter.convert, params='bmp false'),
+        # menus.ContextCommand(name="TIFF", python=converter.convert, params='tiff false'),
+        menus.ContextCommand(name="WEBP", python=converter.convert, params='webp false'),
+        menus.ContextCommand(name="ICO", python=converter.convert, params='ico false'),
+    ])
+    
     video_menu.add_items([
         menus.ContextCommand(name="MP4", python=converter.convert, params='mp4 false'),
         menus.ContextCommand(name="AVI", python=converter.convert, params='avi false'),
         menus.ContextCommand(name="MKV", python=converter.convert, params='mkv false'),
-        menus.ContextCommand(name="MOV", python=converter.convert, params='mov false'),
+        # menus.ContextCommand(name="MOV", python=converter.convert, params='mov false'),
         # menus.ContextCommand(name="FLV", python=converter.convert, params='flv false'),
         menus.ContextCommand(name="WMV", python=converter.convert, params='wmv false'),
         menus.ContextCommand(name="WEBM", python=converter.convert, params='webm false'),
         # menus.ContextCommand(name="M4V", python=converter.convert, params='m4v false'),
     ])
 
-    image_menu.add_items([
-        menus.ContextCommand(name="PNG", python=converter.convert, params='png false'),
-        menus.ContextCommand(name="JPG", python=converter.convert, params='jpg false'),
-        menus.ContextCommand(name="GIF", python=converter.convert, params='gif false'),
-        menus.ContextCommand(name="BMP", python=converter.convert, params='bmp false'),
-        # menus.ContextCommand(name="TIFF", python=converter.convert, params='tiff false'),
-        menus.ContextCommand(name="WEBP", python=converter.convert, params='webp false'),
-        menus.ContextCommand(name="ICO", python=converter.convert, params='ico false'),
-    ])
-
     converter_menu.add_items([
         audio_menu,
-        video_menu,
         image_menu,
+        video_menu,
     ])
 
     converter_menu.compile()
